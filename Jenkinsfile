@@ -2,16 +2,11 @@ pipeline {
     agent any
 
     environment {
-        // TODO: put your real Docker Hub repo here:
-        // e.g. "akshitavidiyala/devexpppp9" or "akshitavidiyala/docker-jenkins-demo"
         IMAGE_NAME = "akshitavidiyala/devexpppp9"
-        DOCKERHUB = credentials('dockerhub-creds')
+        DOCKERHUB = credentials('dockerhub-creds2') // <- NEW ID
     }
 
     stages {
-        // ❌ No manual git checkout needed here –
-        // Jenkins has already checked out https://github.com/akshitavidiyala/devexpppp9.git
-
         stage('Build Docker Image') {
             steps {
                 echo "Building Docker image: ${IMAGE_NAME}:${BUILD_NUMBER}"
