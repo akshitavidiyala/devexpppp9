@@ -1,0 +1,14 @@
+{
+  "name": "docker-jenkins-demo",
+  "version": "1.0.0",
+  "description": "Simple Node.js app for Docker + Jenkins CI/CD demo",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.0"
+  }
+}
